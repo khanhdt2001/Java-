@@ -20,7 +20,7 @@ public class Solution {
         this.numerator = num;
         this.denominator= deno;
     }
-
+    
     public static int GCD(int a, int b) {
         while (a * b != 0) {
             if (a > b) {
