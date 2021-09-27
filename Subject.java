@@ -18,11 +18,16 @@ public class Subject {
     public String getName() {
         return Name;
     }
+    // overwriting 
     public void setName(String name) {
         this.Name = name;
     }
+    // both 2 constructor are useable
+    // public Subject(Subject a){
+    //     this.Name = a.Name;
+    // }
     public Subject(Subject a){
-        this.Name = a.Name;
+        this(a.Name);
     }
     public Subject(){
         setName("Car");
