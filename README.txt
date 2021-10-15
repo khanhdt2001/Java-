@@ -58,6 +58,32 @@ khởi tạo sử dụng toán tử new hoặc phép gán
     - System.out luòng ra 
     - System.err luồng ra nhưng thường sử dụng để xuất lỗi 
     - System.in luồng vào 
+
+    Kế thừa trong java
+ quan hệ is a (polymorphism tính đa hình) từ khóa: extends
+    - mức truy cập protected 
+    => Bảo mật mã nguồn, Nâng cao khả năng sử dụng lại 
+    - gọi hàm của lớp cơ sở là super()
+    - khi thực hiện phương thức khởi tạo ở lớp dẫn xuất thì constr lớp cơ sở được gọi trước.
+    - cơ chế overriding thực hiện theo bottom-up.
+        +Phương thức được định nghĩa lại có
+         phạm vi truy cập không chặt hơn
+         phạm vị truy cập của lớp cơ sở
+        +Kiểu giá trị trả lại như nhau trong
+         phương thức được định nghĩa lại
+ quan hệ has a( composition )
+ kiểm soát truy cập, che dấu thông tin 
+ Phương thức khởi tạo - constructor
+ Phương thức ghi đè – overriding
+ Thiết kế quan hệ kế thừa
+ Từ khóa final 
+    Hắng số, gán giá trị 1 lần ko được thay đổi
+    không cho định nghĩa lại ở lớp dẫn xuất
+    Tham số truyền vào không gán thay đổi giá trị
+    Không có lớp con
+
+
+
 This is for Subject.java
 /*
     Cơ chế nạp chồng: 
@@ -73,7 +99,7 @@ This is for Subject.java
 */
 
 /*
-    Phạm vi truy cập : Public có thể truy cập bởi bất kì ai và ở đâu
+    Phạm vi truy cập :  Public có thể truy cập bởi bất kì ai và ở đâu
                         Protected chỉ truy cập trong cùng phân lớp và các lớp con hoặc lớp trong cùng gói 
                         Private chỉ có thể truy cập trong lớp đó 
 */
